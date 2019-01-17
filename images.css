@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg.jpg);
+    background-size: cover; /*배경이미지로 완전히 덮이게 함*/
+    min-height: 100vh; /*요소의 최소 높이*/
+    font-family: sans-serif;
+}
+#header{
+    margin-top: 2rem;
+    text-align: center;
+}
+#header .avatar{
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    display: inline-block;
+    padding: 0.2rem;
+}
+#header img{
+    display: block;
+}
+#header h1{ 
+    color: rgba(255, 255, 255, 0.62);
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+#header .icons{
+    list-style: none;
+    margin-top: 2rem;
+}
+#header .icons li{
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#header .icons a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.59);
+    display: inline-block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /*아이템을 한 덩어리로 묶어, 수평방향의 중앙에 위치*/
+    align-items: center; /*아이템을 수평방향의 중앙에 위치*/
+    padding: 0.8rem;
+}
+#header .icons a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+#header .icons a:before{
+    margin: 0;
+    font-size: 1.5rem;
+}
+#header .icons .label{
+    display: none;
+}
+.menu{
+    width: 300px;
+    margin: 0 auto; 
+}
+#main{
+    max-width: 67rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+#main .thumbnails{
+    display: flex;
+}
+#main .thumbnails div{
+    width: 100%;
+    margin: 0 0.3rem;
+}
+#main .thumbnails a{
+    display: inline-block;
+    width: 100%;
+    margin: 0.6rem 0;
+}
+#main .thumbnails img{
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+#main .thumbnails a{
+    text-decoration: none;
+}
+#main .thumbnails h3{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.82);
+    padding: 1rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+#footer:before{
+    content: 'here';
+    border-bottom: 1px solid white;
+    width: 7rem;
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+}
+#footer{
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 200;
+    font-size: 0.7rem;
+    text-align: center;
+}
+#wrapper{
+    padding: 2rem;
+}
+@media (max-width: 800px){
+    #main .thumbnails{
+        flex-direction: column;
+    }
+    #main .thumbnails h3{
+        font-size: 1.3rem;
+        padding: 1.3rem;
+    }
+}
